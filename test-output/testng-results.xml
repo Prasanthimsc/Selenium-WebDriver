@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-16T13:27:11 PDT" name="Default suite" finished-at="2022-08-16T13:27:24 PDT" duration-ms="12640">
+    <groups>
+    </groups>
+    <test started-at="2022-08-16T13:27:11 PDT" name="Default test" finished-at="2022-08-16T13:27:24 PDT" duration-ms="12640">
+      <class name="day40_pageobjectmodel.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day40_pageobjectmodel.LoginTest@2d710f1a]" started-at="2022-08-16T13:27:11 PDT" name="setup" finished-at="2022-08-16T13:27:21 PDT" duration-ms="9781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:day40_pageobjectmodel.LoginTest@2d710f1a]" started-at="2022-08-16T13:27:21 PDT" name="testLogo" finished-at="2022-08-16T13:27:21 PDT" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="test_login()[pri:2, instance:day40_pageobjectmodel.LoginTest@2d710f1a]" started-at="2022-08-16T13:27:21 PDT" name="test_login" finished-at="2022-08-16T13:27:23 PDT" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day40_pageobjectmodel.LoginTest@2d710f1a]" started-at="2022-08-16T13:27:23 PDT" name="tearDown" finished-at="2022-08-16T13:27:24 PDT" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day40_pageobjectmodel.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

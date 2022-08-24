@@ -1,0 +1,64 @@
+package Day33;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class HeadlessTestingPractive {
+
+	public static void main(String[] args) {
+		//open browser 
+		
+		ChromeOptions options=new ChromeOptions();
+		options.setHeadless(true);
+		WebDriverManager.chromedriver().setup();
+	 	WebDriver driver=new ChromeDriver(options);
+
+			
+		//WebDriverManager.firefoxdriver().setup();
+		//System.setProperty("webdriver.gecko.driver","C:\\Drivers\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		//WebDriver driver=new FirefoxDriver();
+
+        EdgeOptions eo=new EdgeOptions();
+        eo.setHeadless(true);
+		WebDriverManager.edgedriver().setup();
+		WebDriver driver1=new EdgeDriver(eo);
+		
+		//open url
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+	    driver.manage().window().maximize();
+	    
+	  //provide username
+	    driver.findElement(By.name("txtUsername")).sendKeys("admin");
+	    
+	    //provide password
+	    driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+	    
+	    //click login
+	    driver.findElement(By.id("btnLogin")).click();
+	    
+	    //validate login
+	    String exp_title="OrangeHRM";
+	    String act_title=driver.getTitle();
+	    
+	    if(exp_title.equals(act_title))
+	    {
+	    	System.out.println("Login Successfull");
+	    }
+	    else
+	    {
+	    	System.out.println("Login Fail");	
+	    }
+	    
+		
+     //close browser
+	   // driver.quit();
+	}
+
+}

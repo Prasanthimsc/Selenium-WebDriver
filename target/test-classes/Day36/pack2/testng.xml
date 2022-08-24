@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <test  name="Test1">
+    <classes>
+      <class name="Day36.pack2.DBTest1"/>
+      <class name="Day36.pack2.DBTest2"/>
+      <class name="Day36.pack2.DBConenct"/>
+    </classes>
+  </test> 
+  
+  
+  <test  name="Test2">
+    <classes>
+      <class name="Day36.pack2.DBTest1"/>
+      <class name="Day36.pack2.DBTest2"/>
+      <class name="Day36.pack2.DBConenct"/>
+    </classes>
+  </test> 
+  
+</suite> 
